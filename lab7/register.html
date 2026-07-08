@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .row{
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.row label:first-child{
+    width: 150px;
+}
+
+.row input[type="text"],
+.row input[type="number"],
+.row input[type="email"],
+.row input[type="tel"],
+.row textarea{
+    width: 250px;
+}
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <fieldset>
+    <legend>Registration form</legend>
+
+    <div class="row">
+        <label for="fname">First Name :</label>
+        <input type="text" name="fname" id="fname">
+    </div>
+
+    <div class="row">
+        <label for="lname">Last Name :</label>
+        <input type="text" name="lname" id="lname">
+    </div>
+
+    <div class="row">
+        <label for="age">Age :</label>
+        <input type="number" name="age" id="age">
+    </div>
+
+    <div class="row">
+        <label for="email">Email :</label>
+        <input type="email" id="email">
+    </div>
+
+    <div class="row">
+        <label for="description">Description :</label>
+        <textarea id="description" cols="30" rows="3"></textarea>
+    </div>
+
+    <div class="row">
+        <label for="phone">Phone :</label>
+        <input type="tel" id="phone">
+    </div>
+
+    <div class="row">
+        <label for="occupation">Occupation :</label>
+        <input type="text" id="occupation">
+    </div>
+
+    <div class="row">
+        <label>Agreement :</label>
+        <div>
+            <input type="radio" name="agree" id="agree1">
+            <label for="agree1">I Agree</label>
+
+            <input type="radio" name="agree" id="agree2">
+            <label for="agree2">I Disagree</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <label></label>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </div>
+
+</fieldset>
+</body>
+</html>

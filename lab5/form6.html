@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form - All Tags & Attributes</title>
+  
+</head>
+<body>
+
+    <h1>Complete HTML Form - All Tags & Attributes</h1>
+
+    <form style="width: 600px;">
+
+        <fieldset>
+            <legend>Text Inputs</legend>
+            <div>
+                <label for="full-name">Full Name:</label><br>
+                <input type="text" id="full-name" name="full_name" placeholder="John Doe">
+            </div><br>
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+            </div><br>
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Min 8 characters">
+            </div><br>
+            <div>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="+977-98XXXXXXXX">
+            </div><br>
+            <div>
+                <label for="website">Website:</label><br>
+                <input type="url" id="website" name="website" placeholder="https://yoursite.com">
+            </div><br>
+            <div>
+                <label for="search">Search:</label><br>
+                <input type="search" id="search" name="search" placeholder="Try typing HTML...">
+            </div><br>
+            <div>
+                <label for="student-id">Student ID (readonly):</label><br>
+                <input type="text" id="student-id" name="student_id" value="STU-2024-0042" readonly>
+            </div><br>
+            <div>
+                <label for="admin-code">Admin Code (disabled):</label><br>
+                <input type="text" id="admin-code" name="admin_code" value="LOCKED" disabled>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Numeric, Date & Time</legend>
+            <div>
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" value="18">
+            </div><br>
+            <div>
+                <label for="score">Score (0-100):</label><br>
+                <input type="range" id="score" name="score" min="0" max="100" value="50"> 50
+            </div><br>
+            <div>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob">
+            </div><br>
+            <div>
+                <label for="class-time">Class Time:</label><br>
+                <input type="time" id="class-time" name="class_time">
+            </div><br>
+            <div>
+                <label for="exam-time">Exam Date & Time:</label><br>
+                <input type="datetime-local" id="exam-time" name="exam_time">
+            </div><br>
+            <div>
+                <label for="join-month">Join Month:</label><br>
+                <input type="month" id="join-month" name="join_month">
+            </div><br>
+            <div>
+                <label for="theme-color">Theme Color:</label><br>
+                <input type="color" id="theme-color" name="theme_color" value="#e6ff00">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select, Optgroup & Option</legend>
+            <div>
+                <label for="department">Department:</label><br>
+                <select id="department" name="department">
+                    <option value="">-- Choose --</option>
+                    <optgroup label="Engineering">
+                        <option value="cs">Computer Science</option>
+                        <option value="ee">Electrical Engineering</option>
+                    </optgroup>
+                    <optgroup label="Management">
+                        <option value="mba">MBA</option>
+                        <option value="bba">BBA</option>
+                    </optgroup>
+                </select>
+            </div><br>
+            <div>
+                <label for="skills">Skills (hold Ctrl to select multiple):</label><br>
+                <select id="skills" name="skills" multiple>
+                    <option value="html" selected>HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="sql">SQL</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Radio & Checkbox</legend>
+            <div>
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="male"> Male 
+                <input type="radio" name="gender" value="female"> Female 
+                <input type="radio" name="gender" value="other" checked> Other
+            </div><br>
+            <div>
+                <label>Interests:</label><br>
+                <input type="checkbox" name="interests" value="coding" checked> Coding 
+                <input type="checkbox" name="interests" value="design"> Design 
+                <input type="checkbox" name="interests" value="datascience"> Data Science 
+                <input type="checkbox" name="interests" value="security"> Security (N/A)
+            </div><br>
+            <div>
+                <input type="checkbox" name="terms" required> I agree to the Terms & Conditions *
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Textarea & File</legend>
+            <div>
+                <label for="biography">Biography:</label><br>
+                <textarea id="biography" name="biography"></textarea>
+            </div><br>
+            <div>
+                <label for="profile-photo">Profile Photo:</label><br>
+                <input type="file" id="profile-photo" name="profile_photo">
+            </div><br>
+            <div>
+                <label for="documents">Upload Documents (multiple):</label><br>
+                <input type="file" id="documents" name="documents" multiple>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Meter, Progress & Output</legend>
+            <div>
+                <label for="disk-usage">Disk Usage:</label><br>
+                <meter id="disk-usage" value="0.72" low="0.3" high="0.8" optimum="0.5"></meter> 72%
+            </div><br>
+            <div>
+                <label for="form-completion">Form Completion:</label><br>
+                <progress id="form-completion" max="100" value="60"></progress> 60%
+            </div><br>
+            <div>
+                <label>Calculated Grade:</label><br>
+                <output name="calculated_grade">B+</output>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hidden & Image Input</legend>
+            <div>Hidden field (not visible): name="csrf_token" value="abc123xyz789secure"</div><br>
+            <input type="hidden" name="csrf_token" value="abc123xyz789secure">
+            
+            <div>
+                <label>Image Submit Button:</label><br>
+                <input type="image" src="missing-image.png" alt="Submit form">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Buttons</legend>
+            <div>
+                <input type="submit" value="Submit Form">
+                <input type="reset" value="Reset">
+                <button type="button">Preview</button>
+                <button type="button">Save Draft</button>
+                <button type="button">Calculate Grade</button>
+                <button type="button">Clear All</button>
+            </div>
+        </fieldset>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::selection {
+            background-color: yellow;
+            color: red;
+        }
+         p::first-letter {
+            font-family: cursive;
+            font-size: 200%;
+            color: blue;
+        }
+         p::first-line {
+            font-weight: bold;
+            color: green;
+        }
+         p::before {
+            content: "Before - ";
+            color: orange;
+        }
+         p::after {
+            content: " - After";
+            color: purple;
+        }
+        li::before {
+            content: ">> ";
+            color: red;
+        }
+         li::after {
+            content: " <<";
+            color: red;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <p>
+        lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+    </p>
+    <ul>
+        <li>Apple</li>
+        <li>Ball</li>
+        <li>cat</li>
+        <li>dog</li>
+    </ul>
+</body>
+</html>

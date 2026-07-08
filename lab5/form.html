@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://ncit.edu.np/storage/photo/cover/zFftaidnVWvw2kEaawbaQr3v9RGV2k7n7htCHaPQ.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .main {
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 80px;
+        }
+        .log-in {
+            background-color: rgba(0, 255, 128, 0.5);
+            width: 450px;
+            height: 220px;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .login {
+            display: block;
+            margin: 10px;
+        }
+
+        .login input {
+            background-color: rgb(198, 246, 220);
+        }
+
+        .login-button {
+            background-color: white;
+            color: #010f0b;
+            font-weight: bold;
+            border: 1px solid;
+            border-radius: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .forget {
+            color: rgb(5, 5, 5);
+        }
+
+        .admission-form {
+            background-color: rgba(0, 255, 255, 0.5);
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="log-in">
+            <h1>Log In</h1>
+            <form action="#">
+                <label class="login" for="Username">Username <input type="text" placeholder="Shahrish "></label>
+                <label class="login" for="Password">Password <input type="password" placeholder="Eg:1234567"></label>
+                <input class="login-button" type="button" value="Login">
+                <p class="forget login">forget password?</p>
+            </form>
+        </div>
+        <div class="admission-form">
+
+            <form action="#">
+                <table align="center" cellpadding="10px">
+                    <caption>
+                        <h1>Admission form</h1>
+                    </caption>
+                    <tr>
+                        <td>firstname:</t>
+                        <td><input type="text" placeholder="Shahrish"></td>
+                    </tr>
+                    <tr>
+                        <td>lastname:</td>
+                        <td><input type="text" placeholder="Mikrani"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td><input type="password" name="" id="" placeholder="Eg:3265323"></td>
+                    </tr>
+                    <tr>
+                        <td>DOB:</td>
+                        <td><input type="date" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Contact No.:</td>
+                        <td><input type="tel" name="" id="" placeholder="+977-980000000"></td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>photo</td>
+                        <td><input type="file" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <label><input type="radio" name="gender">male</input></label>
+                            <label><input type="radio" name="gender">female</input></label>
+                            <label><input type="radio" name="gender">others</input></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>faculty</td>
+                        <td>
+                            <label><input type="radio" name="faculty">BBA</input></label>
+                            <label><input type="radio" name="faculty">BBS</input></label>
+                            <label><input type="radio" name="faculty">+2</input></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>
+                            <label><input type="checkbox"> Music</label>
+                            <label><input type="checkbox"> Travel</label>
+                            <label><input type="checkbox"> Reading Books</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Nationality</td>
+                        <td>
+                            <select name="country">
+                                <option value="">Nepal</option>
+                                <option value="">india</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message</td>
+                        <td><textarea name="" id=""></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Term & conditions</td>
+                        <td>
+                            <label><input type="radio" name="agree">I agree</input></label>
+                            <label><input type="radio" name="agree">I Disagree</input></label><br>
+                            <input type="button" value="Submit">
+                            <input type="button" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

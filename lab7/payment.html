@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Details</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#18d7df;
+}
+
+.container{
+    width:600px;
+    background:#ffd31a;
+    margin:40px auto;
+    padding:40px;
+    border-radius:20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius:0px ;
+    box-shadow:0px 5px 15px rgb(13, 13, 13);
+}
+
+h1{
+    text-align:center;
+    color:#555;
+    font-size:55px;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+    color:#666;
+    margin-top:18px;
+    margin-bottom:5px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    font-size:18px;
+}
+
+.cards{
+    text-align:center;
+    margin:15px 0;
+}
+
+.cards img{
+    width:60px;
+    height:40px;
+    border:1px solid #999;
+    background:white;
+    margin:0 5px;
+}
+
+button{
+    width:100%;
+    padding:15px;
+    background:#57e000;
+    color:white;
+    font-size:22px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:green;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Payment details</h1>
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Simanta kasaju">
+
+<label>Email</label>
+<input type="email" placeholder="sim@example.com">
+
+<label>Card Number</label>
+<input type="text" placeholder="1122334455">
+
+<label>Expiry date</label>
+<input type="date">
+
+<label>CVV</label>
+<input type="password" placeholder="12345">
+
+<label>Accepted</label>
+
+<div class="cards">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard">
+    <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Card">
+</div>
+
+<button type="submit">Pay</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+    gap: 20px;
+    height: 700px;
+    width: 75%;
+    box-shadow: 5px 1px 10px black;
+    border-radius: 10px;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+    border-radius: 500px;
+    margin:5px 0px 0px 5px;
+}
+.right{
+    background-image: linear-gradient(to top, rgb(234, 245, 12),red);
+}
+.left{
+   text-align: center;
+   background-color: azure;
+}
+.intro{
+    display: flex;
+    gap: 100px;
+}
+.skills{
+    display: flex;
+    gap: 100px;
+}
+.contact{
+    margin: 20px;
+    font-size: 30px;
+    gap: 50px;
+}

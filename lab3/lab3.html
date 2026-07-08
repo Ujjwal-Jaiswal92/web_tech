@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a:target {
+        background-color: rgb(95, 182, 233);
+        color: rgb(238, 77, 77)
+    }
+    #b:target {
+        background-color: rgb(90, 208, 127);
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <h1>Inter Link</h1><br>
+    <a href="../lab1.html">Click me</a><br>
+
+    <h1>Intra Link</h1><br>
+    <a href="#a">Click me</a>
+    <p id="a">Here is the target of intra link</p>
+    <a href="#b">Click me again</a>
+    <p id="b">Here is another target</p>
+
+    <h1>External Link</h1><br>
+    <a href="https://www.google.com">Google</a><br>
+    <a href="mailto:prsydha@gmail.com">email</a>
+    
+    <h2>Target Attribute Examples</h2>
+
+    
+    <a href="https://www.facebook.com" target="_self">
+        Open in Same Tab (_self)
+    </a>
+
+    <br><br>
+    <a href="https://www.instagram.com" target="_blank">
+        Open in New Tab (_blank)
+    </a>
+
+    <br><br>
+
+    <a href="https://www.wikipedia.org" target="_parent">
+        Open in Parent Frame (_parent)
+    </a><br>
+    <a href="https://www.github.com" target="_top">
+        Open in Full Window (_top)
+    </a>
+</body>
+</html>

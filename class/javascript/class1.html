@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="c">
+    <img src="blue.png" alt="" id="a" height="200" width="200"><br>
+    <button onclick="a()">blue</button>
+    <button onclick="b()">brown</button>
+    <button onclick="c()">redish</button>
+    <p id="b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet dolore commodi nemo quam iure minima autem obcaecati eos alias nam? Iusto animi et ex molestiae commodi nesciunt rerum repudiandae magnam!</p><br>
+    <button onclick="d()">show</button>
+    <button onclick="e()">hide</button><br><br>
+    <button onclick="f()">red</button>
+    <button onclick="g()">green</button>
+    <button onclick="h()">yellow</button>
+    <script>
+        function a()
+        {
+            document.getElementById('a').src="blue.png";
+        }
+        function b()
+        {
+            document.getElementById('a').src="brown.png";
+        }
+        function c()
+        {
+            document.getElementById('a').src="redish.png";
+        }
+        function d()
+        {
+            document.getElementById('b').style='display:show';
+        }
+        function e()
+        {
+            document.getElementById('b').style='display:none';
+        }
+        function f()
+        {
+            document.getElementById('c').style='background:red';
+        }
+        function g()
+        {
+            document.getElementById('c').style='background:green';
+        }
+        function h()
+        {
+            document.getElementById('c').style='background:yellow';
+        }
+    </script>
+</body>
+</html>

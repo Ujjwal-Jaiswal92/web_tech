@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Using srcset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Example</h1>
+    <img
+        src="https://picsum.photos/id/237/400/300"
+        srcset="
+            https://picsum.photos/id/237/400/300 400w,
+            https://picsum.photos/id/237/800/600 800w,
+            https://picsum.photos/id/237/1200/900 1200w"
+        sizes="
+            (max-width: 600px) 400px,
+            (max-width: 900px) 800px,
+            1200px"
+        alt="Random Dog Image">
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* h2{
+    color:red
+}
+h3{
+    color:blue
+}
+p{
+    color:green
+} */
+/* 
+#a{
+    color:orange
+}   
+#b{
+    color:purple
+}
+#c{
+    color:pink
+}
+#d{
+    color:cyan
+}  */
+
+/* .b{
+    color:magenta
+} */
+/* *{
+    background-color: rgb(69, 141, 204) ;
+    color:rgb(126, 83, 167);
+    text-align: center;
+} */
+ [title="fourth"]{
+    color:rgb(255, 0, 0);
+    font-size: 30px;
+ }
+ [title^="first"]{
+     color:rgb(0, 0, 255);
+     font-size: 25px;
+    color:rgb(0, 255, 0);
+    font-size: 20px;
+ }

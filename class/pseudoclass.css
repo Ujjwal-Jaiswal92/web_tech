@@ -1,0 +1,26 @@
+p:hover{   
+    color: red;  
+}
+p:active{   
+    color: green;  
+}
+p:focus{   
+    color: blue;  
+}  
+img:hover{
+    opacity: 1;
+} 
+img{
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+}
+.btn:hover{
+    background-color: yellow;
+}
+.btn{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}

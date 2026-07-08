@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .main{
+            display: flex;
+            aspect-ratio: 5/2;
+            gap:5px;
+
+        }
+        .image{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex: 1 1 0;
+            justify-content: center;
+            align-items: center;
+            transition: flex 0.5s ease-in-out;
+        }
+        .image:hover{
+            flex: 2;
+        }
+        .image1{
+            background-image: url("https://picsum.photos/500/500?random=1");
+        }
+         .image2{
+            background-image: url("https://picsum.photos/500/500?random=2");
+        }
+         .image3{
+            background-image: url("https://picsum.photos/500/500?random=3");
+        }
+         .image4{
+            background-image: url("https://picsum.photos/500/500?random=4");
+        }
+         .image5{
+            background-image: url("https://picsum.photos/500/500?random=5");
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="image image1">Ai-movie1</div>
+        <div class="image image2">Ai-movie2</div>
+        <div class="image image3">Ai-movie3</div>
+        <div class="image image4">Ai-movie4</div>
+        <div class="image image5">Ai-movie5</div>
+    </div>
+
+</body>
+</html>

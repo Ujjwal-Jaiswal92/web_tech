@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 1000px;
+            border: 1px solid;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+            align-items: center;
+            align-content:center;
+            gap: 10px;
+        }
+        .a{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            /* flex-grow: 1;
+            flex-basis: 10px; */
+            flex: 10 10 50;
+        }
+        .b{
+            height: 100px;
+            width: 100px;
+            background-color:yellow;
+            flex-grow: 2;
+        }
+        .c{
+            height: 100px;
+            width: 100px;
+            background-color:green;
+        }
+        .d{
+            height: 100px;
+            width: 100px;
+            background-color:orange;
+            flex-shrink: 2;
+        }
+        .e{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            color:white;
+            order: -1;
+        }
+        .f{
+            height: 100px;
+            width: 100px;
+            background-color:chartreuse;
+        }
+        .g{
+            height: 100px;
+            width: 100px;
+            background-color:aquamarine;
+        }
+        .h{
+            height: 100px;
+            width: 100px;
+            background-color:darkcyan;
+        }
+        .i{
+            height: 100px;
+            width: 100px;
+            background-color:deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="a">div1</div>
+        <div class="b">div2</div>
+        <div class="c">div3</div>
+        <div class="d">div4</div>
+        <div class="e">div5</div>
+        <div class="f">div6</div>
+        <div class="g">div7</div>
+        <div class="h">div8</div>
+        <div class="i">div9</div>
+    </div>
+</body>
+</html>

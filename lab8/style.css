@@ -1,0 +1,165 @@
+* {
+    /* margin: 10px; */
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+}
+nav {
+    height: 70px;
+    /* background-color: rgb(231, 157, 157); */
+    display: flex;
+    border-radius: 50px;
+    justify-content: space-between;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.382);
+    transition: 0.5s all;
+    margin: 50px 70px;
+
+    
+
+    
+
+
+    z-index: 1000;
+}
+
+nav .logo {
+    /* background-color: red; */
+    /* font-size: 20px; */
+
+    font-size: 25px;
+    font-family: cursive;
+    align-self: center;
+    /* background-color: aqua; */
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+nav .tabbar {
+    /* background-color: antiquewhite; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+a:hover {
+    color: orange;
+}
+
+nav .icons {
+    display: flex;
+    margin: 0;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 20px;
+    /* background-color: rgb(203, 11, 11); */
+}
+
+i {
+    color: grey;
+    margin-left: -8px;
+    /*  */
+
+}
+nav .icons i:hover
+{
+    color: rgb(255, 132, 0);
+}
+
+.hero-section {
+    display: flex;
+    /* width: 100%; */
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 50px;
+}
+.hero-section-left{
+    flex: 2;
+    
+}
+.hero-section-right {
+    flex: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-box
+{
+    height: 200px;
+    width:300px;
+
+}
+img {
+    height: auto;
+    width: auto;
+}
+
+.btn {
+    border: 1px solid rgb(245, 143, 53);;
+    border-radius: 30px;
+    font-size: 16px;
+    height: 55px;
+    width: 150px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    transition: transform 0.5s ease;
+}
+.btn-left {
+    background-color: rgb(245, 143, 53);
+    color: white;
+}
+
+.btn-left:hover {
+    background-color: rgb(246, 165, 94);
+}
+
+.btn-right {
+    color: rgb(255, 119, 0);
+    background-color: white;
+    border: 2px solid rgb(243, 172, 97);
+}
+
+.btn-right:hover {
+    background-color: rgb(245, 143, 53);
+    color: white;
+    /* transition: 1s; */
+    border: none;
+}
+.hero-text h1
+{
+    margin-bottom: 20px;
+}
+.hero-text h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.description
+{
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 300;
+}
+

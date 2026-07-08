@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Bio</legend>
+        <form method="POST" action="lab1.html" style="background-color: rgb(234, 233, 231); padding: 20px; border-radius: 10px; width: 400px; margin: auto;">
+        <fieldset>
+            <legend>Personal Information</legend>
+            Name: <input type="text" name="name" placeholder="name" required><br><br>
+            Email: <input type="email" name="email" placeholder="**********@gmail.com" required><br><br>
+            Password: <input type="password" name="password" placeholder="password" required><br><br>
+        </fieldset>
+        <input type="color"><br>
+        <input type="date" placeholder="date" required><br>
+        <input type="datetime-local"><br>
+        <!-- <input type="datetime"><br> -->
+        search:<input type="search" placeholder="search"><br>
+        <input type="range"><br>
+        <input type="week"><br>
+        <input type="month"><br><br>
+        <fieldset>
+            <legend>Hobby</legend>
+            <input type="checkbox" name="hobby" value="reading" checked> Reading
+            <input type="checkbox" name="hobby" value="traveling" checked> Traveling
+            <input type="checkbox" name="hobby" value="cooking"> Cooking
+            <input type="checkbox" name="hobby" value="sports"> Sports
+            <input type="checkbox" name="hobby" value="music"> Music 
+            <input type="checkbox" name="hobby" value="art"> Art
+            <input type="checkbox" name="hobby" value="gaming"> Gaming
+            <input type="checkbox" name="hobby" value="photography"> Photography
+            <input type="checkbox" name="hobby" value="writing"> Writing
+            <input type="checkbox" name="hobby" value="dancing"> Dancing
+            <input type="checkbox" name="hobby" value="other"> Other <br>
+        </fieldset><br>
+        
+        <textarea name="" id="" ></textarea>
+        <br><br>
+        Country:
+        <select name="country" id="country" >
+            <option value="none">Select your country</option>
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select><br>
+        photo: <input type="file" name="photo" accept="image/*" multiple><br><br>
+        <input type="image" name="imagebutton" src="1.png" width="100" height="100"><br>    
+        <input type="submit" value="Submit" id="submit">
+        <input type="reset" value="Reset" id="reset">
+    </form>
+    </fieldset>
+</body>
+
+</html>

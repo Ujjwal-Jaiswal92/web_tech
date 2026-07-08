@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    height:100vh;
+    background:#222;
+    overflow:hidden;
+}
+
+.circle{
+    width:100px;
+    height:100px;
+
+    background:skyblue;
+    border-radius:50%;
+
+    position:absolute;
+    left:100px;
+    top:100px;
+
+    animation:move 5s infinite alternate ease-in-out;
+}
+
+@keyframes move{
+
+    from{
+        transform:translate(0,0);
+    }
+
+    to{
+        transform:translate(200px,100px);
+    }
+
+}
